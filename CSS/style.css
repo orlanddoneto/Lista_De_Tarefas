@@ -1,0 +1,113 @@
+*{
+    box-sizing:border-box
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:cadetblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    
+    color: azure;
+    text-align: center;
+
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 80%;
+    margin: auto auto;
+}
+
+#criarTarefa{
+    height: 40px;
+    width: 80%;
+    font-size: 1.5rem;
+    padding-left: 30%;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 70px;
+    background-color: azure;
+
+}
+
+.botoes{
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    background-color: azure;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.botoes:hover{
+    background-color:slategray;
+    color: azure;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 85%;
+    margin: auto auto;
+    border: 1px solid black;
+    padding-top: 40px;
+    border: none
+}
+
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 7px black;
+   margin-bottom: 3%;
+}
+
+.item-icon{
+    flex: 10%;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.item-nome{
+    flex: 75%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: 20%;
+}
+
+.item-botao{
+    flex: 15%;
+}
+
+.delete{
+    background-color: rgb(230, 49, 49);
+    font-size: 2rem;
+    border-radius: 10px;
+    
+}
+
+.mdi-checkbox-marked-circle{
+    color: green;
+}
+
+.item.clicado{
+   background-color: rgb(89, 175, 89);
+
+}
+.item.clicado .item-nome{
+    text-decoration: line-through;
+    color: rgb(68, 68, 68)
+}
